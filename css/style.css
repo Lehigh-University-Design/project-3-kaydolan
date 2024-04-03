@@ -56,7 +56,11 @@ body {
 }
 
 .daedalus {
-    opacity: 85%;
+    img{
+        opacity: 85%;
+        border-top-right-radius: 300px;
+        border-top-left-radius: 300px;
+    }
 }
 
 .before {
@@ -92,6 +96,20 @@ body {
             font-size: 80px;
             top: 1.2em;
             left: 2.2em;
+        }
+    }
+
+    .before{
+        h1 {
+            font-size: 60px;
+            left: 0.4em;
+            top: 18.5em;
+        }
+
+        h2 {
+            font-size: 90px;
+            top: 14.5em;
+            left: 1em;
         }
     }
 }
