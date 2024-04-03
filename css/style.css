@@ -1,0 +1,97 @@
+body {
+    background: #1B1611;
+
+    .cormorant-script {
+        font-family: "Cormorant", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .my-soul-regular {
+        font-family: "My Soul", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.sun {
+    opacity: 60%;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
+
+.icarus {
+    opacity: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.the-story{
+    h1 {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 120px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 53px;
+        left: 200px;
+    }
+
+    h2 {
+        font-family: "My Soul", cursive;
+        font-weight: 300;
+        font-size: 170px;
+        color: #E6D8BD;
+        position: absolute;
+        top: 0.5em;
+        left: 3.3em;
+    }
+}
+
+.daedalus {
+    opacity: 85%;
+}
+
+.before {
+    h1 {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 100px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 7em;
+        top: 10.6em
+    }
+
+    h2 {
+        font-family: "My Soul", cursive;
+        font-weight: 300;
+        font-size: 170px;
+        color: #E6D8BD;
+        position: absolute;
+        left: 4.1em;
+        top: 8em
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .the-story {
+        h1 {
+            font-size: 65px;
+            left: 80px;
+        }
+
+        h2 {
+            font-size: 80px;
+            top: 1.2em;
+            left: 2.2em;
+        }
+    }
+}
