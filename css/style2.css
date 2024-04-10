@@ -7,6 +7,7 @@ body {
 .hero {
     height: 80vh;
     background-color: black;
+    background-image: url();
     display: grid;
     place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
     margin-bottom: 2em;
