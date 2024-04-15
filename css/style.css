@@ -5,11 +5,13 @@ body {
 }
 
 .hero {
-    height: 80vh;
+    aspect-ratio: 4/3;
     background-color: #1B1611;
     display: grid;
     place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
-    margin-bottom: 10em;
+    margin-bottom: 2em;
+    background: url("../images/hero-literally.png") no-repeat top left #1B1611;
+    background-size: contain;
 }
 
 .dotted { 
@@ -17,6 +19,7 @@ body {
   }
 
 .the-story{
+    padding-top: 16em;
     h1 {
         font-family: "Cormorant", serif;
         font-weight: 300;
