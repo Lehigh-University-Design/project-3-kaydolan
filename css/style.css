@@ -7,9 +7,13 @@ body {
 .hero {
     height: 80vh;
     background-color: black;
+    aspect-ratio: 4/3;
+    background-color: #1B1611;
     display: grid;
     place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
-    margin-bottom: 10em;
+    margin-bottom: 2em;
+    background: url("../images/hero-literally.png") no-repeat top left #1B1611;
+    background-size: contain;
 }
 
 .dotted { 
@@ -17,6 +21,7 @@ body {
   }
 
 .the-story{
+    padding-top: 16em;
     h1 {
         font-family: "Cormorant", serif;
         font-weight: 300;
@@ -61,6 +66,22 @@ body {
         font-family: "My Soul", cursive;  
         color: #E6D8BD;
         font-size: 100px; 
+    }
+
+    p.seal {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 7em;
+        color: #65371F;
+        margin: 0;
+    }
+
+    p.rust {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 7em;
+        color: #A54D27;
+        margin: 0;
     }
   }
 
@@ -154,10 +175,3 @@ body {
 
   }
 
-.end {
-    height: 80vh;
-    background-color: black;
-    display: grid;
-    place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
-    margin-bottom: 0em;
-}
