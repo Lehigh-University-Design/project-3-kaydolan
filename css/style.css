@@ -5,15 +5,14 @@ body {
 }
 
 .hero {
-    height: 80vh;
+    height: 120vh;
     background-color: black;
-    aspect-ratio: 4/3;
     background-color: #1B1611;
     display: grid;
-    place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
+    place-content: start center; /*start, center, end (shorthand for justify-content with align-content)*/
     margin-bottom: 2em;
     background: url("../images/hero-literally.png") no-repeat top left #1B1611;
-    background-size: contain;
+    background-size: cover;
 }
 
 .dotted { 
@@ -86,8 +85,22 @@ body {
   }
 
   @media only screen and (max-width: 720px){
+    .hero {
+        place-content: start center;
+        background-image: url("../images/hero-literally-mobile.png");
+    }
     .section {
         grid-template-columns: 1fr;
+
+        .section-child {
+            p.seal {
+                display: none;
+            }
+        
+            p.rust {
+                display: none;
+            }
+        }
       }
 
       .the-story{
@@ -98,6 +111,8 @@ body {
         h2 {
             font-size: 3em;
         }
+
+        
     }
 
   }
@@ -134,9 +149,9 @@ body {
     grid-template-columns: 1fr 2fr;
     gap: 10em;
     margin: 5em;
-  }
+}
   
-  .section-art {
+.section-art {
     min-height: 1em;
     /*background-color: #d6d6d6;*/
     img {
@@ -156,9 +171,15 @@ body {
         color: #E6D8BD;
         font-size: 60px; 
     }
-  }
+}
 
-  @media only screen and (max-width: 720px){
+.the-end{
+    img {
+        url("../images/waves-mobile.png")
+    }
+}
+
+@media only screen and (max-width: 720px){
     .art-section {
         grid-template-columns: 1fr;
       }
@@ -172,6 +193,5 @@ body {
             font-size: 3em;
         }
     }
-
-  }
+}
 
