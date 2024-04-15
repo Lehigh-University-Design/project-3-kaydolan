@@ -6,7 +6,7 @@ body {
 
 .hero {
     height: 80vh;
-    background-color: #1B1611;
+    background-color: black;
     display: grid;
     place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
     margin-bottom: 10em;
@@ -105,4 +105,59 @@ body {
         color: #E6D8BD;
         margin: 0;
     }
+}
+
+.art-section {
+    display: grid;
+    /*grid-template-columns: 25% 75%;*/
+    grid-template-columns: 1fr 2fr;
+    gap: 10em;
+    margin: 5em;
+  }
+  
+  .section-art {
+    min-height: 1em;
+    /*background-color: #d6d6d6;*/
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    p {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 2em;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    p.alt {
+        font-family: "My Soul", cursive;  
+        color: #E6D8BD;
+        font-size: 60px; 
+    }
+  }
+
+  @media only screen and (max-width: 720px){
+    .art-section {
+        grid-template-columns: 1fr;
+      }
+
+      .the-arts{
+        h1 {
+            font-size: 3em;
+        }
+    
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+  }
+
+.end {
+    height: 80vh;
+    background-color: black;
+    display: grid;
+    place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
+    margin-bottom: 0em;
 }
