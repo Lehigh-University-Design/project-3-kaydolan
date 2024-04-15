@@ -1,280 +1,108 @@
-zbody {
-    background: #1B1611;
-
-    .cormorant-script {
-        font-family: "Cormorant", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .my-soul-regular {
-        font-family: "My Soul", cursive;
-        font-weight: 400;
-        font-style: normal;
-    }
+body {
+    margin: 0;
+    color: #FFFFFF;
+    background-color: #1B1611;
 }
 
-.responsive {
-    max-width: 100%;
-    height: auto;
+.hero {
+    height: 80vh;
+    background-color: #1B1611;
+    display: grid;
+    place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
+    margin-bottom: 10em;
 }
 
-.sun {
-    opacity: 60%;
-    position: absolute;
-    left: -100px;
-    top: -100px;
-}
-
-.icarus {
-    opacity: 65%;
-    display: flex;
-    justify-content: flex-end;
-}
+.dotted { 
+    border-bottom: #FFFFFF 2px dotted;
+  }
 
 .the-story{
     h1 {
         font-family: "Cormorant", serif;
         font-weight: 300;
-        font-size: 120px;
+        font-size: 5em;
         color: #FFFFFF;
-        position: absolute;
-        top: 53px;
-        left: 200px;
+        margin: 0;
     }
 
     h2 {
         font-family: "My Soul", cursive;
         font-weight: 300;
-        font-size: 170px;
+        font-size: 5em;
         color: #E6D8BD;
-        position: absolute;
-        top: 0.5em;
-        left: 3.3em;
+        margin: 0;
     }
 }
 
-.daedalus {
-    img{
-        opacity: 85%;
-        border-top-right-radius: 300px;
-        border-top-left-radius: 300px;
+.section {
+    display: grid;
+    /*grid-template-columns: 25% 75%;*/
+    grid-template-columns: 1fr 2fr;
+    gap: 10em;
+    margin: 5em;
+  }
+  
+  .section-child {
+    min-height: 1em;
+    /*background-color: #d6d6d6;*/
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
+    p {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 3em;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    p.alt {
+        font-family: "My Soul", cursive;  
+        color: #E6D8BD;
+        font-size: 100px; 
+    }
+  }
+
+  @media only screen and (max-width: 720px){
+    .section {
+        grid-template-columns: 1fr;
+      }
+
+      .the-story{
+        h1 {
+            font-size: 3em;
+        }
+    
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+  }
+
+.art {
+    height: 80vh;
+    background-color: black;
+    display: grid;
+    place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
+    margin-bottom: 10em;
 }
 
-.before {
+.the-arts{
     h1 {
         font-family: "Cormorant", serif;
         font-weight: 300;
-        font-size: 95px;
+        font-size: 5em;
         color: #FFFFFF;
-        position: absolute;
-        left: 7em;
-        top: 11.56em
+        margin: 0;
     }
 
     h2 {
         font-family: "My Soul", cursive;
         font-weight: 300;
-        font-size: 170px;
+        font-size: 5em;
         color: #E6D8BD;
-        position: absolute;
-        left: 4.3em;
-        top: 8.2em;
-    }
-
-}
-
-.divider {
-    display: inline-block;
-    border-bottom: #FFFFFF 2px dotted;
-    width: 45em;
-    margin: 1px;
-    position: absolute;
-    right: 8.6em;
-}
-
-.dad-info{
-    h1 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 65px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 10em;
-        top: 27.1em;
-    }
-
-    h2 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 100px;
-        color: #65371F;
-        position: absolute;
-        left: 1em;
-        right: 7em;
-        top: 17em;
-    }
-
-    h3 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 100px;
-        color: #A54D27;
-        position: absolute;
-        left: 1em;
-        right: 7em;
-        top: 20.5em;
-    }
-}
-
-.invention {
-    opacity: 80%;
-    height: 30%;
-    width: 30%;
-    position: absolute;
-    left: 5em;
-    top: 160em;
-}
-
-.tower{
-    h1 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 100px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 7.5em;
-        top: 27em;
-    }
-
-    h2 {
-        font-family: "My Soul", cursive;
-        font-weight: 300;
-        font-size: 170px;
-        color: #E6D8BD;
-        position: absolute;
-        left: 5em;
-        top: 15.9em;
-    }
-
-}
-
-.divider2 {
-    display: inline-block;
-    border-bottom: #FFFFFF 2px dotted;
-    margin: 1px;
-    position: absolute;
-    right: 1em;
-    top: 200em;
-}
-
-.tower-info{
-    h1 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 65px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 10em;
-        top: 50em;
-    }
-
-    h2 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 100px;
-        color: #65371F;
-        position: absolute;
-        left: 1em;
-        right: 7em;
-        top: 17em;
-    }
-
-    h3 {
-        font-family: "Cormorant", serif;
-        font-weight: 300;
-        font-size: 100px;
-        color: #A54D27;
-        position: absolute;
-        left: 1em;
-        right: 7em;
-        top: 20.5em;
-    }
-}
-
-
-
-
-
-@media only screen and (max-width: 600px){
-    .the-story {
-        h1 {
-            font-size: 65px;
-            left: 80px;
-        }
-
-        h2 {
-            font-size: 80px;
-            top: 1.2em;
-            left: 2.2em;
-        }
-    }
-
-    .before{
-        h1 {
-            font-size: 60px;
-            left: 0.4em;
-            top: 18.5em;
-        }
-
-        h2 {
-            font-size: 90px;
-            top: 14.5em;
-            left: 1em;
-        }
-    }
-
-    .divider {
-        top: 94em;
-        left: 2em;
-        width: 27em;
-    }
-
-    .dad-info{
-        h1 {
-            font-size: 35px;
-            left: 1em;
-            top: 43em
-        }
-    
-        h2 {
-            display: none;
-        }
-    
-        h3 {
-            display: none;
-        }
-    }
-
-    .invention {
-        height: 20em;
-        width: 20em;
-        top: 125em;
-    }
-
-    .tower{
-        h1 {
-            font-size: 60px;
-            left: 1em;
-            top: 42em;
-        }
-    
-        h2 {
-            font-size: 90px;
-            left: 2em;
-            top: 28.5em;
-        }
+        margin: 0;
     }
 }
