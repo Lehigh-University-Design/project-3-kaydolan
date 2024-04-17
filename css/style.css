@@ -17,6 +17,7 @@ body {
 
 .dotted { 
     border-bottom: #FFFFFF 2px dotted;
+    margin-bottom: 20px;
   }
 
 .the-story{
@@ -43,7 +44,7 @@ body {
     /*grid-template-columns: 25% 75%;*/
     grid-template-columns: 1fr 2fr;
     gap: 10em;
-    margin: 5em;
+    margin: 2em;
   }
   
   .section-child {
@@ -172,7 +173,7 @@ body {
     /*grid-template-columns: 25% 75%;*/
     grid-template-columns: 1fr 2fr;
     gap: 10em;
-    margin: 5em;
+    margin: 2em;
 }
   
 .section-art {
