@@ -82,6 +82,22 @@ body {
         color: #A54D27;
         margin: 0;
     }
+
+    p.seal-alt {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 5em;
+        color: #65371F;
+        margin: 0;
+    }
+
+    p.rust-alt {
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 5em;
+        color: #A54D27;
+        margin: 0;
+    }
   }
 
   @media only screen and (max-width: 720px){
@@ -98,6 +114,14 @@ body {
             }
         
             p.rust {
+                display: none;
+            }
+
+            p.seal-alt {
+                display: none;
+            }
+        
+            p.rust-alt {
                 display: none;
             }
         }
@@ -118,7 +142,7 @@ body {
   }
 
 .art {
-    height: 80vh;
+    height: 60vh;
     background-color: black;
     display: grid;
     place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
@@ -174,9 +198,11 @@ body {
 }
 
 .the-end{
-    img {
-        url("../images/waves-mobile.png")
-    }
+    height: 80vh;
+    background-color: #1B1611;
+    background-image: url("../images/waves.png");
+    display: grid;
+    place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
 }
 
 @media only screen and (max-width: 720px){
@@ -192,6 +218,10 @@ body {
         h2 {
             font-size: 3em;
         }
+    }
+
+    .the-end {
+        background-image: url("../images/waves-mobile.png");
     }
 }
 
